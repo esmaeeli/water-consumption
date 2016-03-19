@@ -5,9 +5,9 @@ library(ggplot2)
 setwd("~/catdata/")
 
 #Read data from previously cleaned data
-CA=read.csv(file="water-consumption/data/CA_fort.csv")
-district=read.csv(file="water-consumption/data/district_fort.csv")
-temperatureConsumption=read.csv(file="water-consumption/data/temperatureConsumption.csv")
+CA=read.csv(file="https://github.com/esmaeeli/water-consumption.git/data/CA_fort.csv")
+district=read.csv(file="https://github.com/esmaeeli/water-consumption.git/data/district_fort.csv")
+temperatureConsumption=read.csv(file="https://github.com/esmaeeli/water-consumption.git/data/temperatureConsumption.csv")
 
 function(input, output) {
     output$consumptionPlot=renderPlot({        
